@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Vvedite visoty h");
+      int h=in.nextInt();
+      
+      double x=Math.sqrt((2*h)/9.8);
+          System.out.println("Vremya " +" = " + x);
+      
+
+      
+    
+}}
