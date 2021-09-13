@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Vvedite katet a");
+      int a=in.nextInt();
+      System.out.println("Vvedite gipotenyzy c");
+      int c=in.nextInt();
+      
+      double x=Math.sqrt((c*c)-(a*a));
+          System.out.println("Katet b = " + x);
+      
+
+      
+    
+}}
