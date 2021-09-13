@@ -6,7 +6,7 @@ public class MyClass {
       int h=in.nextInt();
       
       double x=Math.sqrt((2*h)/9.8);
-          System.out.println("Vremya " +" = " + x);
+          System.out.println("Vremya " +" = " + x+"cek");
       
 
       
