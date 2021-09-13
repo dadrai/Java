@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Vvedite a");
+      double a=in.nextDouble();
+      System.out.println("Vvedite b");
+      double b=in.nextDouble();
+      double x1=a+b;
+      double x2=a-b;
+      double x3=a*b;
+          System.out.println(a+" + "+ b +" = " + x1+"\n"+
+          a+" - "+ b +" = " + x2+"\n"+
+          a+" * "+ b +" = " + x3);
+      
+
+      
+    
+}}
