@@ -5,12 +5,9 @@ public class MyClass {
         System.out.println("Vvedite n, for 2^n");
       int n=in.nextInt();
       int x=2;
-      if(n==0){System.out.println("2^"+n+" = 1" );}
-      else{if(n==1){System.out.println("2^"+n+" = 2" );}
-      else{for (int i=2;i<=n;i++){x=x*2;}
-          System.out.println("2^"+n+" = " + x );
-      }
-}
+      
+          System.out.println("2^"+n+" = " + Math.pow(x,n) );
+     
       
     }
 }
