@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class MyClass {
+ public static void main(String args[]) {
+ double a,b,c,d,x,y,t=0;
+ Scanner in = new Scanner(System.in);
+ int n = in.nextInt();
+ for (int i=1; i<=100;i++){
+ for(int j=1; j<=100;j++){
+ for(int k=1;k<=100;k++){
+ if(Math.pow(i,n)+Math.pow(j,n)==Math.pow(k,n)){
+ System.out.println(i+"^"+n+" + "+j+"^"+n+" = "+k+"^"+n ); 
+ t++;}
+ 
+ }
+ }
+ }
+ 
+ if(t==0)System.out.println("Net reshenii");
+ 
+ }
+}
