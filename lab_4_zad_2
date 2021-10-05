@@ -1,0 +1,12 @@
+public class MyClass {
+    public static void main(String args[]) {
+        double x=0,k;
+        
+       for (double i =1; i<=10000; i++){
+           k=i;
+          if(i%2==0){k=-k;}
+           x=x+(1/k);
+       }
+      System.out.println("x = " + x);
+    }
+}
