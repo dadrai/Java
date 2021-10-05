@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Vvedite chislo ot 0 do 9");;
+ int n = in.nextInt();
+      switch(n) {
+    case 1: 
+	   System.out.println("Odin");
+		break;
+	case 2: 
+	   System.out.println("Dva");
+		break;
+	case 3: 
+	    System.out.println("Tri");
+		break;
+		case 4: 
+	    System.out.println("Chetiri");
+		break;
+		case 5: 
+	    System.out.println("Pyat'");
+		break;
+		case 6: 
+	    System.out.println("Shest'");
+		break;
+		case 7: 
+	    System.out.println("Sem'");
+		break;
+		case 8: 
+	    System.out.println("Vosem'");
+		break;
+		case 9: 
+	    System.out.println("Devyat'");
+		break;
+		case 0: 
+	    System.out.println("Nol'");
+		break;
+	default: 
+	    System.out.println("Vvedite chislo ot 0 do 9");;
+	    break;
+}
+
+      
+    }
+}
