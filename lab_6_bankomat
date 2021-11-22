@@ -2,43 +2,33 @@ import java.util.Scanner;
 public class Main {
    
        	public static void main(String[] args) {
-	 int amount; // сумма в российских рублях
-int numberOf5000Roubles; // количество 5 тыс. руб. купюр
-int numberOf2000Roubles; // количество 2 тыс. руб. купюр
-int numberOf1000Roubles; // количество 1 тыс. руб. купюр
-int numberOf500Roubles; // количество 500 руб. купюр
-int numberOf100Roubles; // количество 200 руб. купюр
-int numberOf200Roubles; // количество 100 руб. купюр
-int numberOf50Roubles; // количество 50 руб. купюр
- numberOf5000Roubles = amount / 5000;
- amount %= 5000;
-//Вычислить количество 2 тыс. руб. купюр и обновить оставшуюся сумму.
- numberOf2000Roubles = amount / 2000;
- amount %= 2000;
-// Вычислить количество 1 тыс. руб. купюр и обновить оставшуюся сумму.
- numberOf1000Roubles = amount / 1000;
-amount %= 1000;
-//Вычислить количество 500 руб. купюр и обновить оставшуюся сумму.
- numberOf500Roubles = amount / 500;
- amount %= 500;
-// Вычислить количество 200 руб. купюр и обновить оставшуюся сумму.
- numberOf200Roubles = amount / 200;
- amount %= 200;
-// Вычислить количество 100 руб. купюр и обновить оставшуюся сумму.
- numberOf100Roubles = amount / 100;
- amount %= 100;
-
-
-// Вычислить количество 50 руб. купюр.
-numberOf50Roubles = amount / 50;
-
-System.out.printIn("Vasha symma sostoit iz:");
-System.out.printIn(numberOf5000Roubles+ "шт. 5000 руб. купюр:");
-System.out.printIn(numberOf2000Roubles+ "шт.2000  руб. купюр:");
-System.out.printIn(numberOf1000Roubles+ "шт.1000  руб. купюр:");
-System.out.printIn(numberOf500Roubles+ "шт. 500 руб. купюр:");
-System.out.printIn(numberOf200Roubles+ "шт.  руб. купюр:");
-System.out.printIn(numberOf100Roubles+ "шт.  руб. купюр:");
-System.out.printIn(numberOf50Roubles+ "шт.  руб. купюр:");
+       	  int n5000,n2000,n1000,n500,n200,n100,n50;
+       	  Scanner in = new Scanner(System.in);
+        System.out.println("Vvedite summy");
+ int amount = in.nextInt();
+	    n5000= amount/5000;
+	    amount%=5000;
+	     n2000= amount/2000;
+	    amount%=2000;
+	    n1000= amount/1000;
+	    amount%=1000;
+	    n500= amount/500;
+	    amount%=500;
+	    n200= amount/200;
+	    amount%=200;
+	    n100= amount/100;
+	    amount%=100;
+	    n50= amount/50;
+	    amount%=50;
+	    
+System.out.println("Vasha symma sostoit iz:");
+System.out.println(n5000+ "шт. 5000 руб. купюр:");
+System.out.println(n2000+ "шт.2000  руб. купюр:");
+System.out.println(n1000+ "шт.1000  руб. купюр:");
+System.out.println(n500+ "шт. 500 руб. купюр:");
+System.out.println(n200+ "шт. 200 руб. купюр:");
+System.out.println(n100+ "шт. 100 руб. купюр:");
+System.out.println(n50+ "шт.  50руб. купюр:");
+System.out.println(amount + "pyb.  Ostatok");
     }
 }
