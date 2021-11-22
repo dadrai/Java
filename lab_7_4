@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+     double pay=100;
+    System.out.println("Pay = "+pay);
+    System.out.println("Vvedite score");
+    double score = in.nextDouble();
+   if (score>90) pay=(pay/100)*103;
+  else  pay=(pay/100)*101;
+   System.out.println("Pay = "+pay);
+
+    }
+}
+
+
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    System.out.println("Vvedite puls v sostoyanie pokoya");
+    double x = in.nextDouble();
+   if (x>56) System.out.println("Prodolzhaite trenirovky");
+  else  System.out.println("Vashe serdce v horoshem sostoyanie");
+ 
+
+    }
+}
