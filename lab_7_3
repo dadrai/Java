@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int x;
+    System.out.println("Vvedite Y");
+    int y = in.nextInt();
+   if (y>0) x=1;
+   else x=0;
+   System.out.println("X = " + x);
+
+    }
+}
+
+
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+     double pay=100;
+    System.out.println("Pay = "+pay);
+    System.out.println("Vvedite score");
+    double score = in.nextDouble();
+   if (score>90) pay=(pay/100)*103;
+
+   System.out.println("Pay = "+pay);
+
+    }
+}
+
+
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+         double product=10;
+        System.out.println("Product = "+product);
+    Scanner in = new Scanner(System.in);
+    System.out.println("Vvedite X");
+    double x = in.nextDouble();
+
+   if (x!=0) product*=x;
+
+   System.out.println("Product = "+product);
+
+    }
+}
