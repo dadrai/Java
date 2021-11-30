@@ -1,0 +1,157 @@
+1) double rad= Math.toRadians(47);
+double x=Math.toDegrees(Math.PI);
+*********************************************************
+ double x=34+ Math.random()*21;
+ double x=Math.random()*999;
+ double x=5.5+ Math.random()*50;
+********************************************************* 
+ 5.5
+ 5.5
+ 0.5235987755982988
+ 0.5235987755982988
+ *********************************************************
+ 2) import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    
+    System.out.println("код 1 = " + (int)'1' 
+      + " код A = " + (int)'A' 
+      + " код B = " + (int)'B'
+      + " код a = " + (int)'a' 
+      + " код b = " + (int)'b');  
+    
+     System.out.println("символ 40 = " + (char)40 
+      + " символ 59 = " + (char)59 
+      + " символ 79 = " + (char)79
+      + " символ 85 = " + (char)85 
+      + " символ 90 = " + (char)90);  
+    
+   System.out.println("символ 0X40 = " + (char)0X40 
+      + " символ 0X5A = " + (char)0X5A 
+      + " символ 0X71 = " + (char)0X71
+      + " символ 0X72 = " + (char)0X72 
+      + " символ 0X7A = " + (char)0X7A);
+     
+
+  } 
+}
+
+*********************************************************
+49
+100
+97
+Z
+*********************************************************
+b
+c
+oshibka
+*********************************************************
+i=65
+i=1000
+i=1000
+c=a
+*********************************************************
+генерирует и отображает случайную строчную
+латинскую букву
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {   
+
+   
+    
+    Scanner input = new Scanner(System.in);
+   
+
+
+
+double i = 97+ Math.random()*26;;
+char c = (char)i;
+   
+  System.out.println(c);
+
+   
+  }
+}
+*********************************************************
+true
+false
+false
+true
+true
+true
+*********************************************************
+3)
+false
+false
+false
+false
+7
+-7
+0
+W
+-1
+8
+14
+9
+15
+me to Java
+me to 
+true
+true
+welcome to java
+WELCOME TO JAVA
+Welcome to JavaProgramming is fun
+false
+Wel
+*********************************************************
+String s = "Welcome to Java";  +
+String s3 = s1 + s2; +
+String s3 = s1 - s2; -
+s1 == s2; +
+s1 >= s2; -
+s1.compareTo(s2); + (vivod 7)
+int i = s1.length(); +
+char c = s1(0); -
+char c = s1.charAt(s1.length()); -
+*********************************************************
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) { 
+    
+System.out.println("1" + 1);
+System.out.println('1' + 1);
+System.out.println("1" + 1 + 1);
+System.out.println("1" + (1 + 1));
+System.out.println('1' + 1 + 1);
+
+  }
+}
+
+11
+50
+111
+12
+51
+*********************************************************
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) { 
+    
+System.out.println(1 + "Welcome " + 1 + 1);
+System.out.println(1 + "Welcome " + (1 + 1));
+System.out.println(1 + "Welcome " + ('\u0001' + 1));
+System.out.println(1 + "Welcome " + 'a' + 1);
+
+  }
+}
+
+1Welcome 11
+1Welcome 2
+1Welcome 2
+1Welcome a1
+*********************************************************
