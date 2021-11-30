@@ -187,8 +187,7 @@ public class main {
 
 
    int i = 3242344;
-   String s="";
-   s=s+i;
+    String s=i+"";
 System.out.println("Kol-vo cifr = " + s.length());
 
    
@@ -202,8 +201,7 @@ public class main {
 
 
    double i = 324.234;
-   String s="";
-   s=s+i;
+    String s=i+"";
    int x =s.length()-1;
 System.out.println("Kol-vo cifr = " +x);
 
