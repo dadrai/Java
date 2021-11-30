@@ -179,5 +179,35 @@ String s3 = s1.trim();
 int x = s1.indexOf("e");
 
 int x = s1.lastIndexOf("abc");
+*********************************************************
+import java.util.Scanner;
 
+public class main {
+  public static void main(String[] args) {   
+
+
+   int i = 3242344;
+   String s="";
+   s=s+i;
+System.out.println("Kol-vo cifr = " + s.length());
+
+   
+  }
+}
+*********************************************************
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {   
+
+
+   double i = 324.234;
+   String s="";
+   s=s+i;
+   int x =s.length()-1;
+System.out.println("Kol-vo cifr = " +x);
+
+   
+  }
+}
 
