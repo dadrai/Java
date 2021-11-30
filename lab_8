@@ -60,13 +60,6 @@ import java.util.Scanner;
 public class main {
   public static void main(String[] args) {   
 
-   
-    
-    Scanner input = new Scanner(System.in);
-   
-
-
-
 double i = 97+ Math.random()*26;;
 char c = (char)i;
    
@@ -155,3 +148,36 @@ System.out.println(1 + "Welcome " + 'a' + 1);
 1Welcome 2
 1Welcome a1
 *********************************************************
+boolean isEqual= s1.equals(s2);
+
+boolean isEqual= s1.equalsIgnoreCase(s2);
+
+int x= s1.compareTo(s2);
+
+int x= s1.compareToIgnoreCase(s2);
+
+boolean b = s1.startsWith("AAA");
+
+boolean b = s1.endsWith("AAA");
+
+int x= s1.length();
+
+char x= s1.charAt(0);
+
+String s3 = s1 +s2;
+
+string s1 =s1.substring(1);
+
+string s1 =s1.substring(1,4);
+
+String s3 = s1.toLowerCase();
+
+String s3 = s1.toUpperCase();
+
+String s3 = s1.trim();
+
+int x = s1.indexOf("e");
+
+int x = s1.lastIndexOf("abc");
+
+
