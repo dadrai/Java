@@ -244,6 +244,107 @@ public class main {
 }
 }
 _______________________________________
+Остаток равен 1  |  Net
+
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int x,a,b,c,m,n;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+  
+int i = 0, sum = 0;
+while (i < 4) {
+  i++;
+if ((i % 3 == 0) || (i==4)) continue;
+sum += i;
+
+}
+System.out.println(" " + sum);
+  
+}
+}
+
+TEST BREAK
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int x,a,b,c,m,n;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+  
+int sum=0, number =0;
+while ((number <20)&&(sum<100)){
+  number++;
+  sum+=number;
+  
+}
+System.out.println("Chislo = "+ number);
+System.out.println("Sum = "+sum);
+}
+}
+
+TEST CONTINUE
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int x,a,b,c,m,n;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+  
+int sum=0, number =0;
+while (number <20){
+  number++;
+  if ((number!=10)&&(number!=11)) sum+=number;
+  
+  
+}
+
+System.out.println("Sum = "+sum);
+}
+}
+
+Sleva
+1
+2
+1
+2
+2
+3
+
+Sprava
+1
+2
+1
+2
+2
+3
+
+Obratnaya stroka
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int x,a,b,c,m,n;
+	 System.out.println("Vvedite stroky pez probelov");
+
+     String str =  in.nextLine();
+      String reverse = new StringBuffer(str).reverse().toString();
+      System.out.println(reverse);
+
+}
+}
 
 
 
