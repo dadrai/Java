@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  double sum,j,i,x,a,b,c,m,n;
+	 System.out.println("Vvedite summy prdaji");
+   a = in.nextDouble();
+   System.out.println("Vvedite % komissii");
+   b = in.nextDouble();
+   c= a*(b/100);
+   System.out.println("Symma komissii = "+c);
+  
+}
+}
+
+
+
