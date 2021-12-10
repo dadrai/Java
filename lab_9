@@ -1,0 +1,249 @@
+0 10
+1 9
+2 8
+3 7
+4 6
+5 5
+
+
+
+0
+2
+4
+6
+
+
+import java.util.Scanner;
+
+public class maint {
+  public static void main(String[] args) {
+    // ...
+  int n, even;
+  n = 7;
+  even = 0;
+  while (even < n) {
+    System.out.println(even + " " + (int) Math.pow(2,even));
+    even++;
+    }
+  } 
+}
+______________________________________________________________
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  double sum,i,x,a,b,c,m,n;
+	 System.out.println("Vvedite n");
+    n = in.nextDouble();
+    sum=0;
+    i=1;
+    while (i<=n) {
+      sum+=i;
+      i++;
+    }
+    x=(n*(n+1))/2;
+    if(sum==x) System.out.println(x +" = "+sum);
+}
+} 
+___________________________________________________________
+
+odd 1 sum 1.0
+odd 3 sum 4.0
+odd 5 sum 9.0
+odd 7 sum 16.0
+
+
+1 10
+2 8
+3 6
+4 4
+5 2
+
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int sum,j,i,x,a,b,c,m,n;
+	 System.out.println("Vvedite n");
+   // n = in.nextDouble();
+  for (i=1;i<=100;i++){
+  if(i % 4 == 0) System.out.println(i);
+}
+}
+}
+____________________________________________________
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int sum,j,i,x,a,b,c,m,n;
+  double chi;
+	 //System.out.println("Vvedite n");
+   // n = in.nextDouble();
+  chi=9870;
+  i=1;
+  while (chi<=30000){
+    chi=chi + (chi*0.1);
+    System.out.println("Cherez "+i+" god chislennost = "+ (chi - (chi %1)));
+    if (chi > 30000) System.out.println("Chislennost previshaet 30000 cherez "+i+ " let");
+    i++;
+  }
+  
+  
+}
+}
+__________________________________________
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  double sum,j,i,x,a,b,c,m,n;
+  double chi;
+	 System.out.println("Vvedite n");
+   n = in.nextDouble();
+  int p =1;
+  while (n>0){
+    p*=n;
+    n--;
+  }
+  System.out.println("p = "+p);
+  
+}
+}
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  double sum,j,i,x,a,b,c,m,n;
+  double chi;
+	 System.out.println("Vvedite n");
+   n = in.nextDouble();
+  int p =1;
+  
+ for (i=n;i>0;i--){
+   p*=i;
+ }
+  System.out.println("p = "+p);
+  
+}
+}
+____________________________________________
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  double sum,j,i,x,a,b,c,m,n;
+  double chi;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+  int p =0,o=0;
+  n=1;
+ while (n!=0){
+   System.out.println("Vvedite n");
+   n = in.nextDouble();
+   if (n>0) p++;
+   else if(n<0)  o++;
+ }
+  System.out.println("polozhit = "+p);
+  System.out.println("Otricat = "+o);
+  
+}
+}
+_______________________________________
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int sum,j,i,x,a,b,c,m,n;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+
+ do {
+   System.out.println("Vvedite pervoe");
+   i = in.nextInt();
+   System.out.println("Vvedite vtoroe");
+   j = in.nextInt();
+ }
+ while ((i%j!=0) && (j%i!=0));
+  System.out.println("Vihod ");
+  
+}
+}
+_____________________________________
+
+45 raz;
+
+
+0 0 1 0 1 2 0 1 2 3
+
+
+****
+****
+2 ****
+3 2 ****
+4 3 2 ****
+
+
+1xxx2xxx4xxx8xxx16xxx
+1xxx2xxx4xxx8xxx
+1xxx2xxx4xxx
+1xxx2xxx
+1xxx
+
+
+1G
+1G3G
+1G3G5G
+1G3G5G7G
+1G3G5G7G9G
+
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+  int sum,x,a,b,c,m,n;
+	 //System.out.println("Vvedite n");
+   //n = in.nextDouble();
+  int i=1;
+  do{
+    int num =0;
+      for (int j=1;j<=i;j++) {
+     System.out.print(num +" ");
+     num++;}
+    
+    System.out.println();
+    i++;
+  }while (i<=6);
+  i=5;
+  do{
+    int num =0;
+      for (int j=1;j<=i;j++) {
+     System.out.print(num +" ");
+     num++;}
+    
+    System.out.println();
+    i--;
+  }while (i>0);
+  
+  
+}
+}
+_______________________________________
+
+
+
