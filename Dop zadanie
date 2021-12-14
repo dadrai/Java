@@ -59,33 +59,57 @@ public class dzj{
         gor.pred[1][2]="Ochno";
         gor.pred[2][2]="Ochno";
 
-
+      while(true){
       System.out.println("Vvedite vashe Name");
       String name = in.nextLine();
-      if (name.equals("Kartashov")) t=kar;
-      else if (name.equals("Stahin")) t=sth;
-      else if (name.equals("Klisgin")) t=kli;
-      else if (name.equals("Gorchakov")) t=gor;
+      
+      if (name.equals("Kartashov")) {t=kar; break;}
+      else if (name.equals("Stahin")) {t=sth; break;}
+      else if (name.equals("Klishin")) {t=kli; break;}
+      else if (name.equals("Gorchakov")) {t=gor; break;}
+      }
       vivod(t);
       
       System.out.println("\nHotite provesti distant? y / n");
       String vibor = in.nextLine();
       if (vibor.equals("y")) {
-        System.out.println("Vvedite id predmeta");
-        int id = in.nextInt();
-        t.pred[id][2]="Dist";
+        int id=1;
+        while (id!=0){
+        System.out.println("\nVvedite id predmeta, vvedite '0' dlya vihoda");
+        id = in.nextInt();
+        if(id==0){break;}
+        t.pred[id-1][2]="Dist";
+        //ne nashel kak otchistit konsol
         vivod(t);
-      } else System.out.println("Do svidanya!");
+        }
+        ssilka();
+
+        
+      } else System.out.println("Do svidanya!"); 
       
+      
+    
     }
 
 public static void vivod (Person a){
       System.out.printf("\nPrepodovatel: %s \n \nRaspisanie zanyatii:\n",a.name);
   
   for (int i=0;i<a.kol_pred;i++){
-    System.out.printf("%d %s \t %s %s\n",i,a.pred[i][0],a.pred[i][1],a.pred[i][2]);
+    System.out.printf("%d %s \t %s %s\n",i+1,a.pred[i][0],a.pred[i][1],a.pred[i][2]);
   }
 }
+
+public static void ssilka (){
+  Scanner in = new Scanner(System.in);
+  System.out.println("\nY vas est svoya ssilka dlya provedenya zanyatiya? y / n");
+      String vibor2 = in.nextLine();
+      if (vibor2.equals("y")) {
+        System.out.println("\nVvedite ssilky:");
+        String ssil = in.nextLine();
+        System.out.println("\nVasha ssilka dlya provedeniya zanya: "+ssil+"\n Do svidanya!");}
+      else System.out.println("\nSsilka dlya provedeniya zanyatiya: https://bbb5.tspu.edu.ru/ \nDo svidanya!");
+}
+
 
 }
 
