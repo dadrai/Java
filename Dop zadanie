@@ -3,7 +3,7 @@ public class dzj{
       
     public static void main(String[] args) {
       Scanner in = new Scanner(System.in);
-         
+        Person t =new Person();
         Person kar = new Person(); 
         kar.name = "Kartashov";
         kar.kol_pred=3;
@@ -13,7 +13,10 @@ public class dzj{
         kar.pred[1][1]="13.12.21";
         kar.pred[2][0]="Programmirovanie";
         kar.pred[2][1]="14.12.21";
-       //vivod(kar.pred,kar.kol_pred, kar.name);
+        kar.pred[0][2]="Ochno";
+        kar.pred[1][2]="Ochno";
+        kar.pred[2][2]="Ochno";
+
        
         Person kli = new Person(); 
         kli.name = "Klishin";
@@ -24,7 +27,9 @@ public class dzj{
         kli.pred[1][1]="13.12.21";
         kli.pred[2][0]="Teoriya Java";
         kli.pred[2][1]="14.12.21";
-       //vivod(kli.pred,kli.kol_pred, kli.name);
+        kli.pred[0][2]="Ochno";
+        kli.pred[1][2]="Ochno";
+        kli.pred[2][2]="Ochno";
 
        
        Person sth = new Person(); 
@@ -36,7 +41,9 @@ public class dzj{
         sth.pred[1][1]="13.12.21";
         sth.pred[2][0]="Bazi dannih";
         sth.pred[2][1]="14.12.21";
-      //vivod(sth.pred,sth.kol_pred, sth.name);
+        sth.pred[0][2]="Ochno";
+        sth.pred[1][2]="Ochno";
+        sth.pred[2][2]="Ochno";
 
        
         Person gor = new Person(); 
@@ -48,23 +55,43 @@ public class dzj{
         gor.pred[1][1]="13.12.21";
         gor.pred[2][0]="Programmirovanie";
         gor.pred[2][1]="14.12.21";
-      //vivod(gor.pred,gor.kol_pred, gor.name);
+        gor.pred[0][2]="Ochno";
+        gor.pred[1][2]="Ochno";
+        gor.pred[2][2]="Ochno";
 
-        
-        
+
+      System.out.println("Vvedite vashe Name");
+      String name = in.nextLine();
+      if (name.equals("Kartashov")) t=kar;
+      else if (name.equals("Stahin")) t=sth;
+      else if (name.equals("Klisgin")) t=kli;
+      else if (name.equals("Gorchakov")) t=gor;
+      vivod(t);
+      
+      System.out.println("Hotite provesti distant? y / n");
+      String vibor = in.nextLine();
+      if (name.equals("y")) {
+        System.out.println("Vvedite id predmeta");
+        int id = in.nextInt();
+      }
+      
     }
-    public static void vivod (String[][] a, int b, String name){
-      System.out.printf("\nPrepodovatel: %s \n \nRaspisanie zanyatii:\n",name);
+
+public static void vivod (Person a){
+      System.out.printf("\nPrepodovatel: %s \n \nRaspisanie zanyatii:\n",a.name);
   
-  for (int i=0;i<b;i++){
-     System.out.printf("%s \t %s\n",a[i][0],a[i][1]);
+  for (int i=0;i<a.kol_pred;i++){
+    System.out.printf("%d %s \t %s %s\n",i,a.pred[i][0],a.pred[i][1],a.pred[i][2]);
   }
 }
+
 }
+
 class Person{
      
     String name;   
     int kol_pred;
-   String[][] pred = new String[5][2];
+   String[][] pred = new String[5][3];
+   
    
 }
