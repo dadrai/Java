@@ -106,7 +106,7 @@ public static void ssilka (){
       if (vibor2.equals("y")) {
         System.out.println("\nVvedite ssilky:");
         String ssil = in.nextLine();
-        System.out.println("\nVasha ssilka dlya provedeniya zanya: "+ssil+"\n Do svidanya!");}
+        System.out.println("\nVasha ssilka dlya provedeniya zanyatiya: "+ssil+"\n Do svidanya!");}
       else System.out.println("\nSsilka dlya provedeniya zanyatiya: https://bbb5.tspu.edu.ru/ \nDo svidanya!");
 }
 
