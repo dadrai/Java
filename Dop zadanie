@@ -1,21 +1,70 @@
-public class Program{
+import java.util.Scanner;
+public class dzj{
       
     public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
          
-        Person tom = new Person(); // создание объекта
-        tom.displayInfo();
-         
-        // изменяем имя и возраст
-        tom.name = "Tom";
-        tom.age = 34;
-        tom.displayInfo();
+        Person kar = new Person(); 
+        kar.name = "Kartashov";
+        kar.kol_pred=3;
+        kar.pred[0][0]="Vich geometriya";
+        kar.pred[0][1]="12.12.21";
+        kar.pred[1][0]="Informatika         ";
+        kar.pred[1][1]="13.12.21";
+        kar.pred[2][0]="Programmirovanie";
+        kar.pred[2][1]="14.12.21";
+       //vivod(kar.pred,kar.kol_pred, kar.name);
+       
+        Person kli = new Person(); 
+        kli.name = "Klishin";
+        kli.kol_pred=3;
+        kli.pred[0][0]="OOP       ";
+        kli.pred[0][1]="12.12.21";
+        kli.pred[1][0]="Algoritmi";
+        kli.pred[1][1]="13.12.21";
+        kli.pred[2][0]="Teoriya Java";
+        kli.pred[2][1]="14.12.21";
+       //vivod(kli.pred,kli.kol_pred, kli.name);
+
+       
+       Person sth = new Person(); 
+        sth.name = "Stahin";
+        sth.kol_pred=3;
+        sth.pred[0][0]="Model system";
+        sth.pred[0][1]="12.12.21";
+        sth.pred[1][0]="Informatika";
+        sth.pred[1][1]="13.12.21";
+        sth.pred[2][0]="Bazi dannih";
+        sth.pred[2][1]="14.12.21";
+      //vivod(sth.pred,sth.kol_pred, sth.name);
+
+       
+        Person gor = new Person(); 
+        gor.name = "Gorchakov";
+        gor.kol_pred=3;
+        gor.pred[0][0]="Haskell        ";
+        gor.pred[0][1]="12.12.21";
+        gor.pred[1][0]="Informatika         ";
+        gor.pred[1][1]="13.12.21";
+        gor.pred[2][0]="Programmirovanie";
+        gor.pred[2][1]="14.12.21";
+      //vivod(gor.pred,gor.kol_pred, gor.name);
+
+        
+        
     }
+    public static void vivod (String[][] a, int b, String name){
+      System.out.printf("\nPrepodovatel: %s \n \nRaspisanie zanyatii:\n",name);
+  
+  for (int i=0;i<b;i++){
+     System.out.printf("%s \t %s\n",a[i][0],a[i][1]);
+  }
+}
 }
 class Person{
      
-    String name;    // имя
-    int age;        // возраст
-    void displayInfo(){
-        System.out.printf("Name: %s \tAge: %d\n", name, age);
-    }
+    String name;   
+    int kol_pred;
+   String[][] pred = new String[5][2];
+   
 }
