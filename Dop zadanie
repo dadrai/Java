@@ -68,12 +68,14 @@ public class dzj{
       else if (name.equals("Gorchakov")) t=gor;
       vivod(t);
       
-      System.out.println("Hotite provesti distant? y / n");
+      System.out.println("\nHotite provesti distant? y / n");
       String vibor = in.nextLine();
-      if (name.equals("y")) {
+      if (vibor.equals("y")) {
         System.out.println("Vvedite id predmeta");
         int id = in.nextInt();
-      }
+        t.pred[id][2]="Dist";
+        vivod(t);
+      } else System.out.println("Do svidanya!");
       
     }
 
