@@ -1,0 +1,104 @@
+
+
+public class task_1 {
+    public static double a (int sum, double persent){
+        double commission = 0;
+        return commission;
+    }
+    public static double c (int number){
+        double root =0;
+        return root;
+    }
+    public static boolean d (int n){
+        return true;
+    }
+    public static void e (String massage, int n){}
+    public static double f (int sum, double years, double persent){
+       double payment =0;
+       return payment;
+    }
+    public static char g(char n){
+        return n;
+    }
+
+}
+
+________________________________________
+
+public class task_2 {
+    public static void main(String[] args) {
+        nPrintln(5, "Welcome to Java!");
+    }
+    public static void nPrintln(int n, String message) {
+        for (int i = 0; i < n; i++)
+            System.out.println(message);
+    }
+}
+
+_____________________________________
+import java.util.Scanner;
+public class NOD {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите ПЕРВОЕ ЧИСЛО");
+        int n1 = scanner.nextInt();
+        System.out.print("Введите второе ЧИСЛО");
+        int n2 = scanner.nextInt();
+        int gsd1 = gsd(n1, n2);
+        System.out.print(gsd1);
+    }
+    public static int gsd(int n, int nn){
+        int gsd=1; int i =1;
+        while (i <n && i<nn){
+            if (n % i==0 && nn % i ==0){ gsd=i;
+            }i++;}
+            return gsd;
+    }}
+    
+_______________________________________________________________
+
+import java.util.Scanner;
+public class NDS {
+    public static void main(String[] args) {
+
+        double answer = 0; String nds ="";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите стоимость единицы товара ");
+        int price = scanner.nextInt();
+        System.out.print("Введите количество товара ");
+        int count = scanner.nextInt();
+        System.out.print("учитываем ли НДС?(y,n) ");
+        nds = scanner.next();
+        System.out.println(nds == "y");
+        if (nds.equals("y")) {
+            if (count >= 10) {
+                answer = without_nds_sale(price, count, 5, 20.0);
+            } else {
+                answer = without_nds_sale(price, count, 20.0);
+            }
+        } else if (count >= 10) {answer= without_nds_sale(price,count,5);}
+        else {answer = without_nds_sale(price,count);}
+        System.out.print(answer);
+    }
+
+
+    public static double without_nds_sale(int price, int count) {
+        return price * count;
+    }
+
+    public static double without_nds_sale(int price, int count, int sale) {
+        double priceWithDiscount = price * (1 - sale / 100.0) * count;
+        return Math.round(priceWithDiscount);
+    }
+
+    public static double without_nds_sale(int price, int count, double nds) {
+        double priceWithoutnds = price * count;
+        double priceWithnds = priceWithoutnds * (1 + nds / 100);
+        return Math.round(priceWithnds);
+    }
+
+    public static double without_nds_sale(int price, int count, int sale, double nds) {
+        double priceWithDiscount = price * (1 - sale / 100.0) * count;
+        double priceWithnds = priceWithDiscount * (1 + nds / 100);
+        return price * count;
+    }}
