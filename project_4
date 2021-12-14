@@ -1,5 +1,9 @@
 import java.util.Scanner;
-public class project_4 {  public static void main(String[] args) {
+public class main {  public static void main(String[] args) {
+
+ public static double rub(double dollars){
+    return dollars*72.12;
+    }
     int n;
     final double cours = 72.12;
     double dollars = 0;
@@ -25,8 +29,5 @@ public class project_4 {  public static void main(String[] args) {
         double rubles = rub(dollars);
         System.out.println( Math.ceil(rubles) + " российского рубля");
     }}
-    public static double rub(double dollars){
-    return dollars*72.12;
-    }
 
 }
